@@ -1,6 +1,6 @@
 # AML Financial Crime Analytics Lab
 
-An 8-week hands-on portfolio project focused on becoming job-ready for AML / Financial Crime Analytics work in Ireland, with practical SQL and Python capability.
+An 8-week hands-on AML / Financial Crime Analytics portfolio focused on SQL, Python, transaction monitoring, graph-based network detection, model challenge and Irish/EU investigation workflows.
 
 **Status:** Proposed programme — repo setup started 8 September 2026. Training has not yet been formally committed.
 
@@ -27,6 +27,28 @@ The programme is governed by six locked areas:
 | 6 | Network analytics + circular flows + entity relationships |
 | 7 | Detection engine + threshold tuning + anomaly detection + ML evaluation |
 | 8 | FIU Ireland/goAML + Power BI + integrated capstone |
+
+## Locked capstone
+
+### **The Invisible Network**
+**Catching a laundering ring that every individual alert missed**
+
+The capstone uses an **adversarial, purpose-built synthetic dataset** in which individual accounts are deliberately designed to appear clean under conventional transaction-monitoring rules. The project then compares a rules-only baseline against graph/network and anomaly-based detection to reveal the coordinated laundering ring hiding underneath.
+
+Required evidence includes:
+
+- rules-only baseline and documented misses
+- SQL transaction-monitoring detections
+- Python/pandas behavioural analysis
+- NetworkX relationship and circular-flow analysis
+- measurable challenger-vs-baseline lift
+- false-positive and model-performance analysis
+- a **model challenge / defence** covering weaknesses, bias, assumptions and deployment limits
+- an end-to-end investigation and FIU Ireland-style STR narrative
+
+All headline metrics must be generated from the experiment rather than predetermined. The intended reveal is of the form: **“N accounts. 0 individual alerts. 1 coordinated laundering network.”**
+
+See [`docs/CAPSTONE.md`](docs/CAPSTONE.md) for the governing specification.
 
 ## Repository structure
 
