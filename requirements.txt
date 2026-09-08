@@ -1,0 +1,8 @@
+pandas
+numpy
+jupyter
+scikit-learn
+networkx
+matplotlib
+duckdb
+openpyxl
