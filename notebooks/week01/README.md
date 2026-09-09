@@ -7,14 +7,13 @@
 ## Steps
 1. Generate the data: `python data/generate_synthetic_transactions.py`.
 2. Load `data/sample_transactions.csv` into SQL Server as `dbo.transactions`.
-3. Work through Q1 to Q4 in the SQL file. Write Q2 to Q4 yourself.
+3. Work through questions yourself.
 4. Write your observations: what does normal look like, and what stood out.
 
 ## Acceptance criteria
 - The queries run and return sensible results.
-- Q2 to Q4 are your own work, not copied.
-- You can explain, in an interview, what each query shows and why you ran it.
-- You noted whether your Q4 output matches the planted `structuring` rows, and recorded any miss.
+- No copied word.
+- You can explain, what each query shows and why you ran it.
 
 ## Do not yet
 Do not build detection logic, scoring, graphs or models. That starts in Week 3 onward. Week 1 is only about knowing the data.
