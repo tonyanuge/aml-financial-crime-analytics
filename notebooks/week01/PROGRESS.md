@@ -2,14 +2,14 @@
 
 **Single source of truth for state.** Update this file, and commit it, at the end of any working session. The Git history is your full audit trail, so this stays short.
 
-**Current state:** Week 1, task 1. Overall 0 percent.
-**Next action:** Generate the synthetic dataset, then profile it in T-SQL (see `notebooks/week01/README.md`).
+**Current state:** Week 1, task 1. Overall 12.5 percent.
+**Next action:** Begin Week 2: KYC, CDD and EDD, sanctions and PEP screening, followed by customer-risk analysis in T-SQL.
 
 ## Week status
 
 | Week | Focus | Status | Key artefact |
 |---|---|---|---|
-| 1 | Foundations, Irish/EU context, SQL profiling | In Progress
+| 1 | Foundations, Irish/EU context, SQL profiling | Accepted
  | `sql/week01/01_transaction_profile.sql` |
 | 2 | KYC/CDD/EDD, sanctions/PEP, customer-risk SQL | Not started | |
 | 3 | Transaction monitoring, structuring/layering/funnel | Not started | |
