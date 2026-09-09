@@ -1,25 +1,22 @@
-# Week 1 — AML Foundations + SQL Baseline
+# Week 1: baseline and profiling
 
-## Goal
+**Mission:** build a clean analytical baseline of the data before any detection or modelling. You cannot call something unusual until you know what usual looks like.
 
-Understand the data before trying to detect financial crime.
+**Single required output:** a set of reproducible T-SQL profiling queries in `sql/week01/01_transaction_profile.sql`, plus two or three sentences of plain-English observations.
 
-## Practical tasks
+## Steps
+1. Generate the data: `python data/generate_synthetic_transactions.py`.
+2. Load `data/sample_transactions.csv` into SQL Server as `dbo.transactions`.
+3. Work through Q1 to Q4 in the SQL file. Write Q2 to Q4 yourself.
+4. Write your observations: what does normal look like, and what stood out.
 
-1. Load a synthetic payments dataset.
-2. Identify the table grain and key fields.
-3. Profile transaction counts, values, customers, channels and dates.
-4. Check missing values and duplicates.
-5. Write SQL for basic unusual behaviour:
-   - unusually high transaction value
-   - unusually high daily transaction count
-   - repeated values around a chosen threshold
-   - rapid incoming/outgoing movement
-6. Review the output as an analyst: what is suspicious, what is merely unusual, and what extra information would be needed?
+## Acceptance criteria
+- The queries run and return sensible results.
+- Q2 to Q4 are your own work, not copied.
+- You can explain, in an interview, what each query shows and why you ran it.
+- You noted whether your Q4 output matches the planted `structuring` rows, and recorded any miss.
 
-## Evidence to retain
+## Do not yet
+Do not build detection logic, scoring, graphs or models. That starts in Week 3 onward. Week 1 is only about knowing the data.
 
-- SQL queries
-- concise findings
-- screenshots/exports only where they add evidence
-- assumptions clearly labelled
+When accepted, update `PROGRESS.md` (Week 1 to Accepted) and commit.
