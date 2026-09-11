@@ -80,10 +80,14 @@ Normal transactions in the dataset look consistent with standard daily activity,
 usually a single payment in a day, depending on the type of business or payment. 
 The payment amounts and frequency also appear consistent with the historical 
 transaction patterns of the individual accounts.
-However, account 900001 stands out. The deposits are consistently just below 10,000, 
-mostly between 9,200 and 9,800. This is important because they appear to be staying
-below a 10,000 reporting threshold, rather than simply reflecting a normal transaction
-limit, which could suggest an attempt to avoid triggering reporting requirements.
-Another point to note is that 9 transactions were made in a single day. 
-This pattern could be a sign of structuring and would require further investigation.
+However, account 900001 stands out. The deposits are consistently just below 10,000,
+mostly between 9,200 and 9,800. This is worth noting because a cluster of round-number
+deposits sitting just under 10,000 is a pattern commonly associated with structuring,
+not because 10,000 is a legal reporting threshold being avoided here. 10,000 is simply
+the round number this pattern happens to sit under, not a confirmed rule for this
+dataset or a universal AML reporting limit. There could be a legitimate explanation,
+for example a business with a consistent pattern of daily takings.
+Another point to note is that 9 transactions were made in a single day.
+Taken together, this is a potential structuring indicator, not proof of it, and it
+would require further investigation before drawing any conclusion.
 ===================================================================== */

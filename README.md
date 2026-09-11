@@ -10,6 +10,12 @@ The work builds a rules-only baseline, lets it fail the way real systems fail, t
 
 ---
 
+## Project status
+
+This is an ongoing, self-directed AML / financial-crime analytics programme, currently at an early stage. The SQL detection, Python profiling, graph/network analysis, machine-learning challenger, investigation case documentation and Power BI dashboard described below are the planned end-state of the programme, not the current implementation. Live, up-to-date progress is tracked in [`notebooks/week01/PROGRESS.md`](notebooks/week01/PROGRESS.md).
+
+---
+
 ## What this demonstrates
 
 - **Detection, not just description.** Rules and SQL detections for structuring, velocity, rapid movement and linked accounts, benchmarked against a deliberately weak rules-only baseline.

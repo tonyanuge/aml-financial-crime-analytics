@@ -75,4 +75,4 @@ The capstone should demonstrate that the analyst can do more than detect an unus
 
 ## Locked rule
 
-This capstone specification is part of the governed 8-week programme scope. It should not be replaced by a generic AML dataset-analysis project unless explicitly reopened.
+This capstone specification is part of the governed programme scope. It should not be replaced by a generic AML dataset-analysis project unless explicitly reopened.
