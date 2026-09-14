@@ -1,19 +1,17 @@
 /* =====================================================================
-   Week 1, Task 1: profile the dataset BEFORE any detection.
-   Engine: Microsoft SQL Server (T-SQL).
+   Transaction Profiling and Structuring Detection
+   Engine: Microsoft SQL Server (T-SQL)
 
-   Goal: understand the grain, the volumes and the shape of normal
-   behaviour, so that later "unusual" actually means something.
+   Purpose: establish the baseline transaction population before applying
+   detection logic, then isolate sub-threshold clustering consistent with
+   structuring.
 
-   Load sample_transactions.csv into a table called dbo.transactions first
-   (Import Wizard or BULK INSERT). Expected columns:
-   txn_id, account_id, direction, amount, txn_time, ground_truth
-
-   Rule of the programme: write these yourself. 
+   Source: dbo.transactions (txn_id, account_id, direction, amount,
+   txn_time, ground_truth).
    ===================================================================== */
 
 
-/* Q1 (TODO): what is the grain, and how much data is there? */
+/* Dataset grain and volume: row count, distinct accounts, date range. */
 
 SELECT
     COUNT(*) AS total_rows,
@@ -24,10 +22,8 @@ SELECT
 FROM dbo.transactions;
 
 
-/* Q2 (TODO): per-account summary.
-   For each account return: number of transactions, total IN, total OUT,
-   and average amount. Order by transaction count descending.
-    */
+/* Per-account activity summary: volume and IN/OUT totals per account,
+   most active first. Establishes normal account behaviour. */
 
 SELECT
     account_id,
@@ -40,9 +36,8 @@ GROUP BY account_id
 ORDER BY transaction_count DESC;
 
 
-/* Q3 (TODO): daily volume.
-   Count transactions and total amount per calendar day.
-   */
+/* Daily transaction volume: activity level across the period, used as
+   context so a high single-day total is not treated as unusual alone. */
 
 SELECT 
     CAST(txn_time AS DATE) AS transaction_date,
@@ -52,10 +47,10 @@ FROM dbo.transactions
 GROUP BY CAST(txn_time AS DATE);
 
 
-/* Q4 (TODO): first pattern hunt, sub-threshold clustering.
-   Find accounts with several IN transactions between 9000 and 9999
-   on the same day. This is the structuring shape.
-   */
+/* Structuring detection: incoming deposits in the 9,000-9,999 band
+   (just under a 10,000 reporting threshold), 3 or more on the same day
+   for the same account. The daily minimum filters out isolated large
+   deposits that are not structuring. */
 
 SELECT 
     account_id, 
@@ -69,11 +64,6 @@ GROUP BY
     account_id, 
     CAST(txn_time AS DATE)
 HAVING COUNT(*) >= 3;
-
-/* Self-check only after you have written Q2 to Q4:
-   which accounts did your Q4 surface, and do they match the rows where
-   ground_truth = 'structuring'?  */
-
 
 /* ========================== Key Findings ===========================================
 Normal transactions in the dataset look consistent with standard daily activity, 

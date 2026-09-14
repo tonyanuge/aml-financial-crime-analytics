@@ -1,0 +1,305 @@
+customer_id,account_id,full_name,customer_type,country,occupation,declared_income,onboarding_channel,pep_flag,account_open_date
+C0001,100001,Sean Murphy,Individual,Germany,Solicitor,101882,Branch,N,2025-03-02
+C0002,100002,Noah Muller,Individual,Ireland,Solicitor,55394,Branch,N,2021-08-06
+C0003,100003,Adam Gallagher,Individual,United Arab Emirates,Software Engineer,83779,Online,N,2022-04-11
+C0004,100004,Tomasz O'Brien,Individual,Ireland,Consultant,96022,Online,N,2024-02-10
+C0005,100005,Noah Muller,Business,Ireland,Nurse,36098,Online,N,2025-11-06
+C0006,100006,Amara Murphy,Individual,Ireland,Solicitor,88105,Online,N,2023-07-28
+C0007,100007,Aoife Nowak,Individual,Ireland,Solicitor,106903,Online,N,2023-06-12
+C0008,100008,Ravi Okafor,Individual,Ireland,Electrician,51014,Online,N,2022-05-04
+C0009,100009,Grace Nowak,Business,Ireland,Teacher,49836,Online,N,2024-08-19
+C0010,100010,Sophie Walsh,Business,Ireland,Electrician,54298,Online,N,2023-12-28
+C0011,100011,Sophie Doyle,Individual,Ireland,Software Engineer,87654,Branch,N,2022-12-17
+C0012,100012,Emma Byrne,Individual,Ireland,Company Director,125658,Online,N,2024-05-19
+C0013,100013,Marek Murphy,Individual,Germany,Electrician,37901,Online,N,2021-01-14
+C0014,100014,Ravi Kowalski,Individual,Ireland,Teacher,48244,Branch,N,2023-05-31
+C0015,100015,Sean Gallagher,Individual,Ireland,Solicitor,76064,Branch,N,2021-09-23
+C0016,100016,Jack Nguyen,Individual,Ireland,Software Engineer,90363,Branch,N,2021-04-21
+C0017,100017,Piotr Gallagher,Individual,Ireland,Accountant,69968,Online,N,2021-03-11
+C0018,100018,Aoife Patel,Business,Panama,Accountant,71297,Online,N,2025-01-06
+C0019,100019,Tomasz Silva,Individual,Ireland,Nurse,51444,Online,N,2023-03-02
+C0020,100020,Grace Rossi,Individual,Netherlands,Software Engineer,66184,Online,N,2024-06-01
+C0021,100021,Ana Muller,Business,Ireland,Nurse,45315,Branch,N,2025-08-31
+C0022,100022,Daniel McCarthy,Individual,Ireland,Electrician,47567,Online,N,2025-04-30
+C0023,100023,Chen O'Connor,Individual,Ireland,Consultant,46997,Online,N,2024-08-17
+C0024,100024,Emma O'Brien,Individual,Panama,Software Engineer,68842,Branch,N,2025-12-06
+C0025,100025,Grace Patel,Individual,Netherlands,Retail Assistant,28445,Online,N,2025-10-01
+C0026,100026,Jack Silva,Individual,Ireland,Student,6968,Branch,N,2022-11-15
+C0027,100027,Ana Byrne,Individual,Italy,Solicitor,73609,Branch,N,2023-02-24
+C0028,100028,Cian Walsh,Individual,Ireland,Company Director,97201,Branch,N,2024-08-01
+C0029,100029,Chen Muller,Business,Ireland,Consultant,56233,Online,N,2022-07-01
+C0030,100030,Ava Nowak,Individual,Ireland,Electrician,57401,Branch,N,2024-01-07
+C0031,100031,Daniel Kelly,Individual,Ireland,Nurse,59034,Branch,N,2023-01-23
+C0032,100032,Chen Rossi,Individual,Ireland,Nurse,51940,Branch,N,2023-01-22
+C0033,100033,Grace Muller,Individual,Ireland,Solicitor,123502,Branch,N,2025-06-12
+C0034,100034,Marek Byrne,Business,Ireland,Solicitor,67765,Online,N,2021-02-25
+C0035,100035,Conor O'Brien,Business,Ireland,Solicitor,97529,Branch,N,2021-07-19
+C0036,100036,Daniel Muller,Individual,Ireland,Company Director,114690,Online,N,2022-07-21
+C0037,100037,Aoife Byrne,Individual,United Arab Emirates,Retail Assistant,30108,Branch,N,2022-11-19
+C0038,100038,Cian O'Brien,Business,Ireland,Solicitor,119051,Online,N,2025-03-17
+C0039,100039,Ava Muller,Individual,Ireland,Nurse,38155,Branch,N,2024-12-26
+C0040,100040,Adam O'Connor,Individual,Ireland,Electrician,58006,Online,N,2023-12-04
+C0041,100041,Chen Muller,Individual,Spain,Company Director,155257,Branch,N,2021-06-25
+C0042,100042,Conor O'Brien,Individual,Ireland,Software Engineer,58343,Branch,N,2024-08-10
+C0043,100043,Ravi Patel,Individual,Ireland,Accountant,67778,Branch,N,2024-03-01
+C0044,100044,Sophie O'Connor,Individual,Ireland,Software Engineer,90263,Online,N,2023-04-14
+C0045,100045,Emma Nowak,Individual,Ireland,Nurse,51561,Online,N,2022-07-13
+C0046,100046,Sophie Kelly,Individual,Italy,Student,8529,Online,N,2022-03-28
+C0047,100047,Chen O'Brien,Business,Ireland,Student,10516,Branch,N,2022-07-01
+C0048,100048,Ciara Okafor,Business,Germany,Electrician,38920,Branch,N,2024-08-28
+C0049,100049,Chen Okafor,Individual,Ireland,Accountant,66697,Online,N,2021-11-27
+C0050,100050,Grace Muller,Individual,Ireland,Software Engineer,73133,Branch,N,2021-06-26
+C0051,100051,Piotr Muller,Business,Ireland,Software Engineer,69829,Online,N,2025-09-17
+C0052,100052,Adam O'Brien,Individual,Ireland,Nurse,53739,Branch,N,2023-09-06
+C0053,100053,Amara Nowak,Individual,Netherlands,Teacher,50991,Branch,N,2023-01-10
+C0054,100054,Niamh Okafor,Individual,Italy,Teacher,50543,Branch,N,2021-12-27
+C0055,100055,Ava McCarthy,Individual,France,Software Engineer,83852,Online,N,2022-09-14
+C0056,100056,Ana Rossi,Individual,Spain,Accountant,63983,Online,N,2021-02-06
+C0057,100057,Piotr Patel,Individual,Ireland,Retail Assistant,33195,Online,N,2021-02-23
+C0058,100058,Ciara O'Brien,Individual,Ireland,Solicitor,80401,Branch,N,2024-07-24
+C0059,100059,Adam Nguyen,Business,Spain,Company Director,178545,Online,N,2023-09-04
+C0060,100060,Piotr O'Brien,Individual,Ireland,Electrician,40716,Online,N,2025-03-24
+C0061,100061,Ava Silva,Individual,Ireland,Teacher,38071,Online,N,2021-03-01
+C0062,100062,Chen Nowak,Individual,Ireland,Consultant,44542,Branch,N,2022-04-07
+C0063,100063,Amara Gallagher,Individual,Ireland,Retail Assistant,31445,Online,N,2022-02-19
+C0064,100064,Niamh O'Brien,Individual,Ireland,Nurse,39407,Online,N,2025-09-16
+C0065,100065,Marek Nowak,Individual,Ireland,Company Director,91296,Online,N,2023-08-20
+C0066,100066,Niamh Byrne,Individual,Ireland,Solicitor,84670,Branch,N,2022-12-01
+C0067,100067,Marek Nguyen,Individual,Ireland,Nurse,48601,Online,N,2025-11-23
+C0068,100068,Aoife Rossi,Individual,Ireland,Consultant,80518,Branch,N,2024-12-16
+C0069,100069,Tomasz Okafor,Individual,Italy,Software Engineer,94370,Online,N,2021-05-02
+C0070,100070,Marek Silva,Individual,Spain,Electrician,64627,Branch,N,2024-10-20
+C0071,100071,Jack Patel,Individual,Ireland,Software Engineer,68116,Online,N,2021-11-02
+C0072,100072,Grace Walsh,Individual,Panama,Solicitor,79707,Online,N,2022-06-21
+C0073,100073,Elena McCarthy,Individual,Ireland,Software Engineer,78015,Online,N,2023-12-03
+C0074,100074,Aoife Silva,Individual,Italy,Consultant,105553,Online,N,2025-10-01
+C0075,100075,Grace Rossi,Individual,Ireland,Software Engineer,73155,Branch,N,2024-05-07
+C0076,100076,Noah McCarthy,Business,Spain,Consultant,98228,Branch,N,2024-10-25
+C0077,100077,Adam Doyle,Individual,Cyprus,Student,6280,Online,N,2025-10-03
+C0078,100078,Adam Rossi,Individual,Ireland,Company Director,64752,Branch,N,2021-05-06
+C0079,100079,Grace Ryan,Individual,Ireland,Teacher,41483,Branch,N,2022-02-10
+C0080,100080,Elena O'Brien,Individual,Ireland,Electrician,57509,Branch,N,2023-02-15
+C0081,100081,Ava Doyle,Individual,Ireland,Accountant,46330,Branch,N,2025-02-03
+C0082,100082,Noah Kelly,Individual,Ireland,Retail Assistant,27961,Online,N,2023-02-13
+C0083,100083,Jack Okafor,Individual,Netherlands,Consultant,44947,Online,N,2022-09-09
+C0084,100084,Tomasz Okafor,Business,Ireland,Accountant,71401,Online,N,2024-07-25
+C0085,100085,Sophie O'Connor,Individual,Ireland,Accountant,64524,Branch,N,2022-04-02
+C0086,100086,Adam Nguyen,Individual,Ireland,Accountant,57020,Online,N,2022-06-19
+C0087,100087,Ravi Walsh,Individual,Ireland,Software Engineer,72895,Branch,N,2024-11-12
+C0088,100088,Ravi Silva,Individual,Ireland,Electrician,45054,Online,N,2022-05-03
+C0089,100089,Niamh Nguyen,Individual,Spain,Retail Assistant,32666,Online,N,2021-05-18
+C0090,100090,Ava Muller,Individual,Ireland,Accountant,73966,Branch,N,2024-05-20
+C0091,100091,Elena Rossi,Individual,Ireland,Software Engineer,67063,Branch,N,2022-01-03
+C0092,100092,Liam O'Brien,Individual,Ireland,Nurse,53321,Online,N,2022-03-23
+C0093,100093,Chen Byrne,Individual,Ireland,Company Director,103542,Branch,N,2024-03-20
+C0094,100094,Amara O'Connor,Individual,Ireland,Nurse,48117,Online,N,2021-05-20
+C0095,100095,Amara Rossi,Business,Ireland,Retail Assistant,26326,Online,N,2022-04-13
+C0096,100096,Piotr O'Connor,Individual,Spain,Electrician,40867,Online,N,2024-12-19
+C0097,100097,Piotr Murphy,Individual,Ireland,Retail Assistant,30564,Branch,N,2022-12-23
+C0098,100098,Jack Doyle,Individual,Ireland,Software Engineer,91075,Online,N,2023-03-10
+C0099,100099,Ciara Okafor,Individual,Ireland,Accountant,49750,Online,N,2025-09-18
+C0100,100100,Tomasz Murphy,Individual,Ireland,Solicitor,56010,Online,N,2021-12-02
+C0101,100101,Niamh McCarthy,Individual,Ireland,Nurse,39073,Branch,N,2023-07-18
+C0102,100102,Sophie Patel,Individual,Poland,Company Director,158760,Online,N,2023-02-02
+C0103,100103,Emma Rossi,Individual,Ireland,Company Director,99740,Branch,N,2021-04-01
+C0104,100104,Cian Walsh,Individual,France,Nurse,58834,Online,N,2022-05-20
+C0105,100105,Daniel Muller,Individual,Ireland,Company Director,169812,Branch,N,2024-10-24
+C0106,100106,Jack Gallagher,Individual,Ireland,Company Director,83893,Online,N,2025-10-05
+C0107,100107,Tomasz Nguyen,Individual,Ireland,Software Engineer,83965,Online,N,2024-08-17
+C0108,100108,Ciara Walsh,Individual,Ireland,Consultant,82252,Online,N,2021-05-22
+C0109,100109,Marek O'Connor,Individual,Ireland,Student,11136,Branch,N,2024-08-11
+C0110,100110,Liam O'Brien,Individual,France,Electrician,45696,Online,N,2021-01-06
+C0111,100111,Piotr Byrne,Individual,Ireland,Company Director,155231,Branch,N,2022-01-23
+C0112,100112,Grace O'Connor,Individual,Ireland,Accountant,49534,Online,N,2025-07-27
+C0113,100113,Ana Rossi,Business,Ireland,Teacher,38021,Online,N,2025-03-26
+C0114,100114,Tomasz Patel,Individual,Germany,Solicitor,78460,Online,N,2024-07-11
+C0115,100115,Ana Ryan,Individual,Ireland,Solicitor,102676,Online,N,2023-06-12
+C0116,100116,Sean Ryan,Individual,Spain,Company Director,74592,Branch,N,2021-02-18
+C0117,100117,Jack Walsh,Individual,Ireland,Retail Assistant,32621,Online,N,2023-05-07
+C0118,100118,Niamh Silva,Individual,Ireland,Student,924,Online,N,2021-12-04
+C0119,100119,Sophie Byrne,Individual,Ireland,Teacher,44082,Branch,N,2022-01-27
+C0120,100120,Chen Muller,Business,Spain,Student,6081,Online,N,2025-04-10
+C0121,100121,Tomasz Murphy,Individual,Ireland,Software Engineer,57663,Branch,N,2025-10-02
+C0122,100122,Jack Byrne,Individual,Spain,Teacher,39676,Online,N,2022-11-05
+C0123,100123,Jack Murphy,Individual,Ireland,Accountant,79257,Online,N,2023-04-07
+C0124,100124,Ravi Kowalski,Business,Ireland,Teacher,38067,Branch,N,2022-03-03
+C0125,100125,Piotr Kowalski,Individual,Netherlands,Student,9386,Branch,N,2022-08-14
+C0126,100126,Niamh O'Brien,Individual,Ireland,Student,5278,Online,N,2021-12-28
+C0127,100127,Ana Walsh,Individual,Ireland,Electrician,59509,Online,N,2025-03-19
+C0128,100128,Niamh Kowalski,Individual,Ireland,Accountant,71935,Branch,N,2022-11-11
+C0129,100129,Sean Silva,Individual,Germany,Electrician,59537,Online,N,2022-12-02
+C0130,100130,Niamh McCarthy,Business,Spain,Nurse,57757,Online,N,2024-06-30
+C0131,100131,Grace Kowalski,Individual,Ireland,Solicitor,60263,Online,N,2025-11-16
+C0132,100132,Piotr Rossi,Individual,Ireland,Consultant,95717,Branch,N,2021-09-15
+C0133,100133,Aoife McCarthy,Individual,Ireland,Accountant,73288,Branch,N,2022-04-02
+C0134,100134,Noah O'Brien,Individual,Ireland,Electrician,49471,Online,N,2023-04-12
+C0135,100135,Conor Kowalski,Business,Ireland,Public Official,88000,Online,Y,2025-09-26
+C0136,100136,Ciara Walsh,Individual,Italy,Accountant,59233,Online,N,2023-12-07
+C0137,100137,Sean Okafor,Individual,Spain,Retail Assistant,26146,Online,N,2023-01-09
+C0138,100138,Amara Doyle,Individual,Ireland,Software Engineer,57410,Online,N,2024-09-05
+C0139,100139,Noah Okafor,Individual,Panama,Consultant,114848,Branch,N,2025-02-12
+C0140,100140,Saoirse Silva,Individual,Ireland,Nurse,52394,Branch,N,2025-11-25
+C0141,100141,Emma Nowak,Business,Ireland,Teacher,35941,Branch,N,2025-09-08
+C0142,100142,Ana Okafor,Individual,United Arab Emirates,Accountant,64901,Branch,N,2023-03-01
+C0143,100143,Piotr Silva,Individual,United Arab Emirates,Company Director,78800,Online,N,2024-04-29
+C0144,100144,Ravi Silva,Individual,Cyprus,Accountant,54311,Branch,N,2023-06-28
+C0145,100145,Noah Doyle,Individual,Ireland,Company Director,108707,Branch,N,2021-06-05
+C0146,100146,Elena Rossi,Individual,Ireland,Accountant,49315,Online,N,2023-03-01
+C0147,100147,Sean Gallagher,Individual,Ireland,Accountant,68516,Online,N,2023-07-07
+C0148,100148,Cian Nowak,Individual,Ireland,Retail Assistant,29231,Online,N,2024-10-20
+C0149,100149,Cian McCarthy,Individual,Ireland,Retail Assistant,25064,Branch,N,2022-07-13
+C0150,100150,Daniel O'Connor,Individual,Ireland,Company Director,148952,Online,N,2023-01-08
+C0151,100151,Liam Kowalski,Individual,Ireland,Consultant,87192,Branch,N,2021-12-03
+C0152,100152,Sophie Walsh,Individual,Ireland,Solicitor,109398,Branch,N,2022-04-08
+C0153,100153,Grace Okafor,Individual,Ireland,Teacher,54813,Online,N,2024-12-31
+C0154,100154,Jack Murphy,Individual,Ireland,Company Director,94304,Online,N,2022-09-06
+C0155,100155,Liam Gallagher,Individual,France,Nurse,36897,Online,N,2023-09-29
+C0156,100156,Aoife Kowalski,Individual,Panama,Solicitor,87641,Branch,N,2025-06-13
+C0157,100157,Cian Doyle,Individual,Ireland,Company Director,167723,Online,N,2025-05-13
+C0158,100158,Niamh Kelly,Individual,Ireland,Teacher,54829,Branch,N,2021-02-16
+C0159,100159,Saoirse Nowak,Individual,Ireland,Consultant,112225,Online,N,2021-11-28
+C0160,100160,Amara Byrne,Individual,Ireland,Consultant,49298,Online,N,2023-09-26
+C0161,100161,Grace Ryan,Individual,France,Consultant,116179,Branch,N,2024-01-10
+C0162,100162,Elena Nguyen,Individual,Ireland,Software Engineer,57674,Branch,N,2025-01-10
+C0163,100163,Cian Nguyen,Business,Ireland,Consultant,91802,Branch,N,2021-11-20
+C0164,100164,Grace O'Connor,Individual,Ireland,Solicitor,119956,Online,N,2022-10-12
+C0165,100165,Sophie Okafor,Individual,Netherlands,Teacher,51349,Online,N,2021-12-31
+C0166,100166,Saoirse Kelly,Individual,Ireland,Software Engineer,86879,Online,N,2022-05-27
+C0167,100167,Grace O'Brien,Individual,Ireland,Software Engineer,94618,Online,N,2024-04-11
+C0168,100168,Daniel O'Brien,Individual,Ireland,Public Official,76000,Online,Y,2025-10-03
+C0169,100169,Adam O'Brien,Individual,Germany,Company Director,160084,Branch,N,2025-05-14
+C0170,100170,Noah McCarthy,Individual,Ireland,Accountant,45490,Online,N,2022-07-20
+C0171,100171,Cian Kelly,Individual,Ireland,Solicitor,73859,Branch,N,2021-04-14
+C0172,100172,Grace Nguyen,Individual,Ireland,Consultant,41466,Online,N,2025-05-29
+C0173,100173,Amara McCarthy,Individual,Ireland,Retail Assistant,33255,Branch,N,2021-11-12
+C0174,100174,Ciara Rossi,Individual,Ireland,Company Director,163154,Branch,N,2023-11-28
+C0175,100175,Ciara Muller,Individual,Ireland,Consultant,85018,Online,N,2024-01-05
+C0176,100176,Ciara Doyle,Individual,Ireland,Accountant,58267,Online,N,2023-09-02
+C0177,100177,Conor Patel,Individual,Italy,Company Director,129563,Branch,N,2024-05-06
+C0178,100178,Ciara Okafor,Individual,Ireland,Nurse,39201,Branch,N,2025-11-06
+C0179,100179,Ciara Kowalski,Individual,Ireland,Software Engineer,75852,Online,N,2025-10-06
+C0180,100180,Ravi Murphy,Individual,Ireland,Nurse,37812,Online,N,2025-01-02
+C0181,100181,Ava O'Brien,Individual,Ireland,Consultant,50755,Branch,N,2022-04-02
+C0182,100182,Ravi McCarthy,Individual,Netherlands,Accountant,78681,Online,N,2024-04-27
+C0183,100183,Noah Doyle,Individual,Ireland,Retail Assistant,28331,Branch,N,2024-08-04
+C0184,100184,Conor Murphy,Individual,Ireland,Software Engineer,90089,Online,N,2025-04-03
+C0185,100185,Marek O'Brien,Individual,Ireland,Solicitor,107667,Online,N,2022-07-04
+C0186,100186,Cian Kowalski,Individual,France,Solicitor,61479,Branch,N,2021-07-07
+C0187,100187,Adam Kelly,Individual,Ireland,Student,9654,Online,N,2021-11-17
+C0188,100188,Ana O'Brien,Individual,Ireland,Company Director,167691,Online,N,2025-04-26
+C0189,100189,Amara Gallagher,Individual,Ireland,Retail Assistant,31665,Online,N,2025-01-18
+C0190,100190,Elena Nowak,Individual,Ireland,Consultant,104411,Online,N,2023-01-28
+C0191,100191,Noah Patel,Individual,Germany,Solicitor,93726,Online,N,2021-11-28
+C0192,100192,Ravi Patel,Individual,Ireland,Electrician,44488,Online,N,2024-02-04
+C0193,100193,Chen McCarthy,Individual,Ireland,Solicitor,62093,Online,N,2025-12-21
+C0194,100194,Cian Okafor,Individual,Poland,Nurse,48722,Online,N,2024-04-07
+C0195,100195,Aoife Muller,Individual,Cyprus,Company Director,172385,Branch,N,2023-03-04
+C0196,100196,Cian Byrne,Individual,Ireland,Accountant,49159,Branch,N,2022-06-27
+C0197,100197,Emma Rossi,Business,Ireland,Consultant,64093,Online,N,2025-06-22
+C0198,100198,Adam Rossi,Individual,Italy,Retail Assistant,25474,Online,N,2024-05-24
+C0199,100199,Noah Murphy,Individual,Ireland,Student,708,Branch,N,2021-03-03
+C0200,100200,Ana Muller,Individual,Spain,Consultant,63339,Branch,N,2025-05-14
+C0201,100201,Chen Walsh,Individual,Ireland,Teacher,36913,Online,N,2024-07-29
+C0202,100202,Niamh McCarthy,Individual,Spain,Accountant,66975,Online,N,2023-05-31
+C0203,100203,Daniel Rossi,Individual,Ireland,Retail Assistant,29499,Branch,N,2021-04-06
+C0204,100204,Adam Murphy,Individual,Ireland,Retail Assistant,24936,Branch,N,2023-04-24
+C0205,100205,Ravi Gallagher,Individual,Ireland,Accountant,58461,Branch,N,2021-07-16
+C0206,100206,Piotr McCarthy,Individual,France,Software Engineer,66437,Branch,N,2024-01-25
+C0207,100207,Ciara Muller,Individual,Ireland,Accountant,46105,Online,N,2025-10-25
+C0208,100208,Saoirse Walsh,Individual,Ireland,Software Engineer,88896,Online,N,2025-03-05
+C0209,100209,Conor O'Brien,Individual,Italy,Public Official,95000,Online,Y,2025-10-28
+C0210,100210,Tomasz Doyle,Individual,Ireland,Accountant,61489,Online,N,2021-08-16
+C0211,100211,Noah Muller,Individual,Cyprus,Company Director,169844,Online,N,2024-03-19
+C0212,100212,Jack Muller,Individual,Ireland,Solicitor,61517,Branch,N,2021-11-05
+C0213,100213,Liam Ryan,Individual,Ireland,Retail Assistant,29122,Online,N,2022-08-08
+C0214,100214,Chen Okafor,Individual,Ireland,Nurse,52797,Branch,N,2023-06-24
+C0215,100215,Emma Rossi,Individual,Ireland,Solicitor,104479,Branch,N,2021-01-02
+C0216,100216,Ana Nowak,Individual,Netherlands,Software Engineer,83103,Branch,N,2023-04-06
+C0217,100217,Conor Silva,Business,Cyprus,Solicitor,81875,Branch,N,2024-02-05
+C0218,100218,Ciara O'Connor,Individual,Netherlands,Retail Assistant,29598,Branch,N,2024-12-16
+C0219,100219,Chen Walsh,Individual,Ireland,Retail Assistant,27639,Online,N,2021-04-25
+C0220,100220,Marek Rossi,Individual,Ireland,Nurse,54008,Branch,N,2025-06-13
+C0221,100221,Grace Kelly,Individual,Ireland,Solicitor,61889,Online,N,2021-11-02
+C0222,100222,Niamh Patel,Business,Ireland,Consultant,106379,Online,N,2024-01-31
+C0223,100223,Niamh Gallagher,Business,Ireland,Solicitor,94992,Branch,N,2024-11-01
+C0224,100224,Tomasz O'Connor,Individual,Ireland,Accountant,70021,Branch,N,2024-08-04
+C0225,100225,Piotr O'Brien,Individual,Ireland,Retail Assistant,31074,Online,N,2023-03-22
+C0226,100226,Noah Silva,Individual,Ireland,Nurse,45937,Branch,N,2023-08-12
+C0227,100227,Emma Kelly,Individual,Ireland,Company Director,145803,Online,N,2024-10-14
+C0228,100228,Adam Walsh,Individual,Spain,Accountant,55878,Online,N,2022-03-18
+C0229,100229,Chen O'Connor,Individual,Ireland,Electrician,38635,Branch,N,2022-09-20
+C0230,100230,Conor Murphy,Individual,Ireland,Student,5323,Branch,N,2024-10-05
+C0231,100231,Marek Walsh,Individual,Ireland,Solicitor,73971,Branch,N,2024-12-23
+C0232,100232,Niamh Silva,Individual,France,Retail Assistant,26641,Branch,N,2023-08-15
+C0233,100233,Daniel Kowalski,Individual,Ireland,Teacher,51179,Online,N,2021-01-27
+C0234,100234,Noah Byrne,Individual,France,Teacher,50964,Online,N,2023-11-18
+C0235,100235,Conor Gallagher,Individual,Ireland,Accountant,49005,Online,N,2024-09-22
+C0236,100236,Piotr O'Connor,Individual,Ireland,Retail Assistant,33218,Online,N,2021-04-20
+C0237,100237,Cian Gallagher,Individual,Ireland,Retail Assistant,28478,Online,N,2022-11-24
+C0238,100238,Marek Walsh,Individual,Ireland,Teacher,47758,Online,N,2021-07-24
+C0239,100239,Liam McCarthy,Individual,Ireland,Software Engineer,56045,Online,N,2023-04-19
+C0240,100240,Chen Nowak,Business,Ireland,Nurse,44645,Branch,N,2024-12-18
+C0241,100241,Cian O'Brien,Individual,Ireland,Software Engineer,67572,Branch,N,2024-02-06
+C0242,100242,Ciara O'Connor,Business,United Arab Emirates,Accountant,62313,Online,N,2025-10-30
+C0243,100243,Adam O'Connor,Individual,Ireland,Accountant,57699,Online,N,2022-06-21
+C0244,100244,Ravi Walsh,Individual,France,Accountant,61897,Online,N,2025-02-08
+C0245,100245,Piotr Rossi,Individual,Ireland,Solicitor,70516,Branch,N,2024-01-22
+C0246,100246,Ravi Nguyen,Individual,Ireland,Retail Assistant,26212,Branch,N,2021-03-12
+C0247,100247,Ravi Muller,Individual,Ireland,Software Engineer,87467,Online,N,2021-02-10
+C0248,100248,Niamh Ryan,Individual,Spain,Retail Assistant,30597,Online,N,2022-10-29
+C0249,100249,Sean Ryan,Business,Italy,Consultant,55135,Online,N,2024-06-29
+C0250,100250,Niamh Patel,Individual,Italy,Teacher,53906,Branch,N,2023-09-15
+C0251,100251,Cian Nowak,Individual,Ireland,Nurse,53672,Branch,N,2023-08-05
+C0252,100252,Jack McCarthy,Individual,Ireland,Company Director,139824,Online,N,2022-09-09
+C0253,100253,Marek Kowalski,Individual,Ireland,Solicitor,86614,Branch,N,2022-10-06
+C0254,100254,Aoife Nguyen,Business,Ireland,Solicitor,65457,Online,N,2023-07-16
+C0255,100255,Elena Kowalski,Individual,Ireland,Consultant,100618,Online,N,2024-08-16
+C0256,100256,Conor Walsh,Individual,Cyprus,Accountant,59167,Online,N,2023-07-12
+C0257,100257,Aoife Nguyen,Individual,Poland,Software Engineer,70811,Online,N,2022-02-22
+C0258,100258,Piotr Kelly,Individual,Ireland,Company Director,152104,Online,N,2023-02-20
+C0259,100259,Amara Murphy,Individual,Ireland,Solicitor,85536,Online,N,2024-03-02
+C0260,100260,Amara Patel,Individual,Ireland,Consultant,112523,Online,N,2023-10-08
+C0261,100261,Noah McCarthy,Business,Ireland,Company Director,82750,Branch,N,2022-06-22
+C0262,100262,Tomasz Gallagher,Individual,Ireland,Teacher,48732,Online,N,2022-04-14
+C0263,100263,Liam Doyle,Individual,Ireland,Retail Assistant,30760,Branch,N,2023-04-21
+C0264,100264,Ava Nguyen,Individual,Italy,Accountant,52258,Online,N,2021-07-06
+C0265,100265,Grace Doyle,Individual,Ireland,Electrician,36677,Online,N,2024-06-29
+C0266,100266,Ciara O'Connor,Individual,Ireland,Nurse,45536,Online,N,2025-12-15
+C0267,100267,Saoirse Ryan,Individual,Ireland,Accountant,63618,Online,N,2024-03-24
+C0268,100268,Marek Okafor,Individual,Ireland,Consultant,62535,Branch,N,2021-05-10
+C0269,100269,Jack O'Connor,Individual,Ireland,Teacher,39130,Branch,N,2025-01-05
+C0270,100270,Niamh Okafor,Individual,Ireland,Solicitor,102508,Online,N,2025-06-11
+C0271,100271,Ravi Kelly,Individual,Ireland,Teacher,47302,Branch,N,2025-04-03
+C0272,100272,Jack Ryan,Individual,Ireland,Nurse,54893,Online,N,2025-05-01
+C0273,100273,Adam McCarthy,Individual,Ireland,Company Director,121294,Branch,N,2023-04-05
+C0274,100274,Liam Silva,Business,Ireland,Company Director,124179,Online,N,2024-04-07
+C0275,100275,Daniel Muller,Individual,Ireland,Nurse,47387,Online,N,2023-01-28
+C0276,100276,Ava Okafor,Individual,Ireland,Nurse,37584,Online,N,2023-05-22
+C0277,100277,Daniel Walsh,Individual,Ireland,Retail Assistant,32755,Branch,N,2022-02-09
+C0278,100278,Tomasz Nguyen,Individual,Italy,Nurse,57192,Branch,N,2022-03-19
+C0279,100279,Ciara Nowak,Individual,Ireland,Electrician,49674,Online,N,2025-09-05
+C0280,100280,Adam O'Brien,Individual,Ireland,Accountant,67302,Online,N,2024-11-01
+C0281,100281,Amara Ryan,Individual,Ireland,Consultant,77063,Branch,N,2022-03-20
+C0282,100282,Ava Muller,Individual,Ireland,Consultant,110461,Online,N,2022-05-09
+C0283,100283,Ana Murphy,Individual,Ireland,Retail Assistant,24792,Online,N,2023-12-15
+C0284,100284,Jack Kowalski,Individual,Ireland,Teacher,36768,Branch,N,2025-06-25
+C0285,100285,Conor Kowalski,Individual,Ireland,Nurse,56878,Online,N,2025-04-02
+C0286,100286,Amara McCarthy,Business,Ireland,Retail Assistant,28271,Online,N,2022-08-28
+C0287,100287,Sophie Rossi,Individual,Ireland,Accountant,58450,Online,N,2021-10-11
+C0288,100288,Sean Silva,Individual,Spain,Accountant,50069,Online,N,2024-12-22
+C0289,100289,Chen O'Brien,Individual,Ireland,Electrician,60414,Branch,N,2025-01-20
+C0290,100290,Jack Rossi,Individual,Ireland,Software Engineer,65178,Online,N,2022-12-23
+C0291,100291,Saoirse Nowak,Individual,Poland,Teacher,44938,Online,N,2024-09-27
+C0292,100292,Emma Ryan,Individual,Ireland,Teacher,50831,Online,N,2021-12-19
+C0293,100293,Marek Muller,Individual,Ireland,Solicitor,80796,Online,N,2025-11-03
+C0294,100294,Saoirse Nguyen,Individual,Ireland,Retail Assistant,27621,Online,N,2024-09-02
+C0295,100295,Grace O'Connor,Individual,Ireland,Consultant,61785,Online,N,2022-05-12
+C0296,100296,Adam Murphy,Individual,Ireland,Retail Assistant,29388,Online,N,2022-10-26
+C0297,100297,Cian Walsh,Business,Ireland,Retail Assistant,26013,Branch,N,2024-02-15
+C0298,100298,Tomasz Ryan,Individual,Ireland,Student,5284,Branch,N,2021-04-08
+C0299,100299,Piotr Doyle,Individual,Ireland,Company Director,104837,Branch,N,2022-04-02
+C0300,100300,Ravi Silva,Individual,Ireland,Consultant,49679,Online,N,2021-02-01
+C0301,900001,Kevin Whelan,Individual,Ireland,Teacher,38000,Online,N,2024-04-15
+C0302,900010,Nova Consulting Ltd,Business,Ireland,Consultant,60000,Online,N,2023-06-20
+C0303,900011,Apex Trading Ltd,Business,Panama,Consultant,55000,Online,N,2023-06-25
+C0304,900012,Zenith Holdings Ltd,Business,Cyprus,Consultant,58000,Online,N,2023-06-30
