@@ -1,20 +1,13 @@
-# Transaction Profiling and Structuring Investigation
+# Transaction Profiling and Structuring Detection
 
-## Objective
+Establishes the baseline transaction population before applying detection logic, then isolates sub-threshold clustering consistent with structuring.
 
-Build a clean analytical baseline of the transaction data before applying more advanced detection logic.
+## Contents
 
-The purpose is to understand what normal transaction activity looks like, identify unusual behaviour and document findings using reproducible SQL.
+- Detection logic: `sql/transaction_profiling/01_transaction_profile.sql`
+- Investigation write-up: `reports/case-studies/transaction_profiling_and_structuring_investigation.md`
+- Source data: `data/sample_transactions.csv` (synthetic)
 
-## Outputs
+## Summary
 
-- Transaction population profiling
-- Per-account summaries
-- Daily transaction-volume analysis
-- Structuring detection query
-- Investigation observations
-- Case-study report
-
-## Key artefact
-
-`sql/transaction_profiling/01_transaction_profile.sql`
+Profiling of the transaction population established normal account and daily activity across the dataset. A structuring detection query then isolated a single account receiving repeated incoming deposits held just below the €10,000 reporting threshold on the same day, a pattern consistent with structuring and referred for further investigation.
