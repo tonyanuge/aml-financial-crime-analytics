@@ -1,83 +1,103 @@
-/* =====================================================================
-   Transaction Profiling and Structuring Detection
-   Engine: Microsoft SQL Server (T-SQL)
+/*
+1. For each account, show each transaction with its running count of transactions over time (1st, 2nd, 3rd...). 
+Window function, ordered by time. (This is ROW_NUMBER() or COUNT(*) OVER, your choice, tell me why you picked which.)
 
-   Purpose: establish the baseline transaction population before applying
-   detection logic, then isolate sub-threshold clustering consistent with
-   structuring.
+2. For each account, show each transaction alongside the account's average amount, 
+on every row, without collapsing the rows. (Hint: AVG(amount) OVER (PARTITION BY account_id), 
+no ORDER BY needed. Notice how this differs from a GROUP BY average.)
 
-   Source: dbo.transactions (txn_id, account_id, direction, amount,
-   txn_time, ground_truth).
-   ===================================================================== */
+3. For each transaction, show the time gap since that account's previous transaction. 
+(Hint: LAG(txn_time) OVER (PARTITION BY account_id ORDER BY txn_time), then DATEDIFF. T
+his is the direct foundation of velocity detection in Week 3, so it's the important one.)
 
+4. Using a CTE: first build per-account totals (count, total in, total out), then in the main
+query return only the accounts whose transaction count is in the top 10 by count. (Combines CTE with ordering/TOP.)
 
-/* Dataset grain and volume: row count, distinct accounts, date range. */
+5. Two CTEs chained: one for per-account daily transaction counts, then a second that finds accounts 
+appearing on 3 or more distinct days. (Stretch one; if it walls you, show me where and I'll teach from there.)
 
-SELECT
-    COUNT(*) AS total_rows,
-    COUNT(DISTINCT txn_id) AS distinct_transactions,
-    COUNT(DISTINCT account_id) AS distinct_accounts,
-    MIN(txn_time) AS first_txn,
-    MAX(txn_time) AS last_txn
-FROM dbo.transactions;
+*/
 
 
-/* Per-account activity summary: volume and IN/OUT totals per account,
-   most active first. Establishes normal account behaviour. */
+--Solution 1.
+	SELECT 
+    account_id, 
+    txn_time,
+    amount,
+    ROW_NUMBER() OVER (
+        PARTITION BY account_id 
+        ORDER BY txn_time
+    ) AS count_over_time
+FROM transactions;
 
-SELECT
+-- I chose row_number over count because it represents a sequential of incremental count that returns 1st, 2nd, 3rd over time.
+
+-- Solution 2
+SELECT 
+	account_id, 
+    txn_time,
+    amount,
+	AVG(amount) OVER (PARTITION BY account_id) AS avg_amount
+
+FROM transactions
+ORDER BY amount DESC;
+
+-- Solution 3
+SELECT 
+    account_id, 
+    txn_time,
+    amount,
+    LAG(txn_time) OVER (
+        PARTITION BY account_id 
+        ORDER BY txn_time
+    ) AS prev_txn_time,
+    DATEDIFF(
+        minute, 
+        LAG(txn_time) OVER (PARTITION BY account_id ORDER BY txn_time), 
+        txn_time
+    ) AS time_gap_minutes
+FROM transactions
+ORDER BY amount DESC;
+
+-- Solution 4
+
+WITH per_account_totals AS (
+    SELECT 
+        account_id,
+        COUNT(*) AS total_count,
+        SUM(CASE WHEN direction = 'IN'  THEN amount ELSE 0 END) AS total_in,
+        SUM(CASE WHEN direction = 'OUT' THEN amount ELSE 0 END) AS total_out
+    FROM transactions
+    GROUP BY account_id
+)
+SELECT TOP 10 
     account_id,
-    COUNT(*) AS transaction_count,
-    SUM(CASE WHEN direction = 'IN'  THEN amount ELSE 0 END) AS total_in,
-    SUM(CASE WHEN direction = 'OUT' THEN amount ELSE 0 END) AS total_out,
-    AVG(amount) AS average_amount
-FROM dbo.transactions
-GROUP BY account_id
-ORDER BY transaction_count DESC;
+    total_count,
+    total_in,
+    total_out
+FROM per_account_totals
+ORDER BY total_count DESC;
 
+-- Solution 5
+WITH daily_counts AS (
+    SELECT
+        account_id,
+        CAST(txn_time AS DATE) AS txn_date,
+        COUNT(*) AS txns_that_day
+    FROM dbo.transactions
+    GROUP BY account_id, CAST(txn_time AS DATE)
+)
 
-/* Daily transaction volume: activity level across the period, used as
-   context so a high single-day total is not treated as unusual alone. */
+, active_accounts AS (
+    SELECT
+        account_id,
+        COUNT(*) AS active_days
+    FROM daily_counts
+    GROUP BY account_id
+    HAVING COUNT(*) >= 3
+)
+SELECT account_id, active_days
+FROM active_accounts
+ORDER BY active_days DESC;
 
-SELECT 
-    CAST(txn_time AS DATE) AS transaction_date,
-    COUNT(*) AS transaction_count,
-    SUM(amount) AS total_amount
-FROM dbo.transactions
-GROUP BY CAST(txn_time AS DATE);
-
-
-/* Structuring detection: incoming deposits in the 9,000-9,999 band
-   (just under a 10,000 reporting threshold), 3 or more on the same day
-   for the same account. The daily minimum filters out isolated large
-   deposits that are not structuring. */
-
-SELECT 
-    account_id, 
-    CAST(txn_time AS DATE) AS transaction_date,
-    COUNT(*) AS transaction_count,
-    SUM(amount) AS total_amount
-FROM dbo.transactions 
-WHERE direction = 'IN' 
-  AND amount BETWEEN 9000 AND 9999
-GROUP BY 
-    account_id, 
-    CAST(txn_time AS DATE)
-HAVING COUNT(*) >= 3;
-
-/* ========================== Key Findings ===========================================
-Normal transactions in the dataset look consistent with standard daily activity, 
-usually a single payment in a day, depending on the type of business or payment. 
-The payment amounts and frequency also appear consistent with the historical 
-transaction patterns of the individual accounts.
-However, account 900001 stands out. The deposits are consistently just below 10,000,
-mostly between 9,200 and 9,800. This is worth noting because a cluster of round-number
-deposits sitting just under 10,000 is a pattern commonly associated with structuring,
-not because 10,000 is a legal reporting threshold being avoided here. 10,000 is simply
-the round number this pattern happens to sit under, not a confirmed rule for this
-dataset or a universal AML reporting limit. There could be a legitimate explanation,
-for example a business with a consistent pattern of daily takings.
-Another point to note is that 9 transactions were made in a single day.
-Taken together, this is a potential structuring indicator, not proof of it, and it
-would require further investigation before drawing any conclusion.
-===================================================================== */
+--5. Two CTEs chained: one for per-account daily transaction counts, then a second that finds accounts appearing on 3 or more distinct days
