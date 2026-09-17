@@ -17,7 +17,7 @@ Next: sanctions and PEP screening (SQL exact matching, then Python fuzzy matchin
 |---|---|---|
 | Transaction profiling and structuring detection | Complete | `sql/transaction_profiling/01_transaction_profile.sql`, `reports/case-studies/transaction_profiling_and_structuring_investigation.md` |
 | Customer risk profiling | Complete | `sql/customer_risk/01_customer_risk_profile.sql`, `reports/case-studies/customer_risk_investigation.md` |
-| Sanctions and PEP screening | Complete | `notebook/investigation_screening/screening_investigation.ipynb`,`sql/structuring_detection/screening_sql_baseline.sql`, `reports/case-studies/screening_investigation.md`|
+| Sanctions and PEP screening | Complete | `notebook/investigation_screening/screening_investigation.ipynb`,`sql/sanctions_pep_screening/screening_sql_baseline.sql`, `reports/case-studies/screening_investigation.md`|
 | Transaction monitoring and typology detection | Planned | |
 | Network and entity analytics | Planned | |
 | Detection tuning and model validation | Planned | |
